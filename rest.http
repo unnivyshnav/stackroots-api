@@ -1,0 +1,8 @@
+###Register Route
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{"fullname": "Vyshnav",
+  "email": "yourstruly267@gmail.com",
+  "password": "1234"
+}
