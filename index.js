@@ -7,11 +7,11 @@ const cors = require("cors");
 const authRoute = require("./routes/auth");
 
 app.use(cors());
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 dotenv.config();
 
+//connecting MongoDb
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
